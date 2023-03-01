@@ -13,7 +13,7 @@
         "outputPath": "dist/packages/frontend",
         "index": "packages/frontend/src/index.html",
         "baseHref": "/",
-        "main": "packages/frontend/src/main.js",
+        "main": "packages/frontend/src/main.jsx",
         "tsConfig": "packages/frontend/tsconfig.app.json",
         "assets": [
           "packages/frontend/src/favicon.ico",
