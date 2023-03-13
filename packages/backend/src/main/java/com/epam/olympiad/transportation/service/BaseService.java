@@ -2,15 +2,14 @@ package com.epam.olympiad.transportation.service;
 
 import com.epam.olympiad.transportation.model.BaseRequestModel;
 import com.epam.olympiad.transportation.model.BaseResponseModel;
-import com.epam.olympiad.transportation.util.BaseRequestParameters;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
+import java.util.Map;
 
-public interface BaseService<R extends BaseRequestModel, A extends BaseResponseModel, T extends BaseRequestParameters> {
+public interface BaseService<R extends BaseRequestModel, A extends BaseResponseModel> {
 
-    ResponseEntity<List<A>> getList(T requestParameters);
+    ResponseEntity<List<A>> getList(Map<String, String> requestParameters);
 
     ResponseEntity<A> listRecordByID(Long id);
 
@@ -20,5 +19,4 @@ public interface BaseService<R extends BaseRequestModel, A extends BaseResponseM
 
     ResponseEntity<String> deleteExistingRecord(Long id);
 
-    ResponseEntity<String> uploadCsvData(MultipartFile file);
 }

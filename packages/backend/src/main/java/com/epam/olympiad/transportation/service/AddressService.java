@@ -2,19 +2,18 @@ package com.epam.olympiad.transportation.service;
 
 import com.epam.olympiad.transportation.model.AddressRequest;
 import com.epam.olympiad.transportation.model.AddressResponse;
-import com.epam.olympiad.transportation.util.AddressRequestParameters;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
-public class AddressService implements BaseService<AddressRequest, AddressResponse, AddressRequestParameters> {
+public class AddressService implements BaseService<AddressRequest, AddressResponse> {
 
     @Override
-    public ResponseEntity<List<AddressResponse>> getList(AddressRequestParameters requestParameters) {
+    public ResponseEntity<List<AddressResponse>> getList(Map<String, String> requestParameters) {
         throw new NotImplementedException();
     }
 
@@ -38,8 +37,4 @@ public class AddressService implements BaseService<AddressRequest, AddressRespon
         throw new NotImplementedException();
     }
 
-    @Override
-    public ResponseEntity<String> uploadCsvData(MultipartFile file) {
-        throw new NotImplementedException();
-    }
 }

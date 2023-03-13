@@ -2,18 +2,17 @@ package com.epam.olympiad.transportation.service;
 
 import com.epam.olympiad.transportation.model.RouteRequest;
 import com.epam.olympiad.transportation.model.RouteResponse;
-import com.epam.olympiad.transportation.util.RouteRequestParameters;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
-public class RouteService implements BaseService<RouteRequest, RouteResponse, RouteRequestParameters> {
+public class RouteService implements BaseService<RouteRequest, RouteResponse> {
     @Override
-    public ResponseEntity<List<RouteResponse>> getList(RouteRequestParameters requestParameters) {
+    public ResponseEntity<List<RouteResponse>> getList(Map<String, String> requestParameters) {
         throw new NotImplementedException();
     }
 
@@ -37,8 +36,4 @@ public class RouteService implements BaseService<RouteRequest, RouteResponse, Ro
         throw new NotImplementedException();
     }
 
-    @Override
-    public ResponseEntity<String> uploadCsvData(MultipartFile file) {
-        throw new NotImplementedException();
-    }
 }

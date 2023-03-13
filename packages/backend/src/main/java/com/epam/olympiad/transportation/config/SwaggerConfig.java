@@ -21,13 +21,13 @@ public class SwaggerConfig {
                 .select()
                 .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
-                .build();
+                .build().apiInfo(apiInfo());
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("JavaInUse API")
-                .description("JavaInUse API reference for developers")
-                .licenseUrl("javainuse@gmail.com").version("1.0").build();
+        return new ApiInfoBuilder().title("Transportation project for Web Olympiad")
+                .description("Here you will find the description of the API that needs to be implemented")
+                .version("1.0").build();
     }
 
 }

@@ -2,18 +2,17 @@ package com.epam.olympiad.transportation.service;
 
 import com.epam.olympiad.transportation.model.CityRequest;
 import com.epam.olympiad.transportation.model.CityResponse;
-import com.epam.olympiad.transportation.util.CityRequestParameters;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
-public class CityService implements BaseService<CityRequest, CityResponse, CityRequestParameters> {
+public class CityService implements BaseService<CityRequest, CityResponse> {
     @Override
-    public ResponseEntity<List<CityResponse>> getList(CityRequestParameters requestParameters) {
+    public ResponseEntity<List<CityResponse>> getList(Map<String, String> requestParameters) {
         throw new NotImplementedException();
     }
 
@@ -37,8 +36,4 @@ public class CityService implements BaseService<CityRequest, CityResponse, CityR
         throw new NotImplementedException();
     }
 
-    @Override
-    public ResponseEntity<String> uploadCsvData(MultipartFile file) {
-        throw new NotImplementedException();
-    }
 }
