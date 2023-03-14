@@ -17,6 +17,10 @@ This is the application for get the traffic data and see some statistics.
 - make sure you have installed docker and docker-compose
 - `docker-compose up` should run all necessary parts of application
 
+### What you need to do ?
+Run the application and implement tasks in ```Task.md``` file
+
+
 ### Structure
 
 ```.

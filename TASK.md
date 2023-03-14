@@ -1,4 +1,17 @@
-Olympiad 
+Olympiad Task 
+
+What we expect to have. 
+We should have fully functioning application with the backend logic itself and frontend.
+
+please before start the challenge make sure to fork this current repo and have it in your side.
+
+Each team should have one final repo where you will have your final code pushed.
+
+
+You have 5 hours to complete the task and push it on your forked repos.
+
+Please make sure to send your code base repo link to ```narek_hovsepyan@epam.com```
+
 ## Frontend requirements
 
 We need to have application for finding the routes. 
