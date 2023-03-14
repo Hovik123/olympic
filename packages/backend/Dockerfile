@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk-slim
+FROM adoptopenjdk/maven-openjdk11
 RUN mkdir -p /app && mkdir -p /app/conf
 COPY . /app
 
