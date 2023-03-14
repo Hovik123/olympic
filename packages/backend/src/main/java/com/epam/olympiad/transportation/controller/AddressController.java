@@ -10,7 +10,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 
 import java.util.Map;
 
@@ -29,21 +29,21 @@ public class AddressController {
   @ApiOperation(value = "Retrieves a list of all addresses from the database.")
   public ResponseEntity<Page<AddressResponse>> getAddressList(@ApiIgnore @RequestParam(required = false) Map<String, String> requestParams) {
     //TODO: finish the endpoint implementation
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @RequestMapping(method = RequestMethod.GET, value = "/addresses/{id}")
   @ApiOperation(value = "Retrieve a specific address from the database by its ID.")
   public ResponseEntity<AddressResponse> getAddressById(@PathVariable Long id) {
     //TODO: finish the endpoint implementation
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @RequestMapping(method = RequestMethod.POST, value = "/addresses")
   @ApiOperation(value = "Create new address record.")
   public ResponseEntity<Long> createNewAddress(@RequestBody AddressRequest requestPayload) {
     //TODO: finish the endpoint implementation
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @RequestMapping(method = RequestMethod.PUT, value = "/addresses/{id}")
@@ -51,14 +51,14 @@ public class AddressController {
   public ResponseEntity<Long> updateAddress(@RequestBody AddressRequest requestPayload,
                                             @PathVariable Long id) {
     //TODO: finish the endpoint implementation
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @RequestMapping(method = RequestMethod.DELETE, value = "/addresses/{id}")
   @ApiOperation(value = "Delete existing address record by its ID. Note that in related route records should be deleted, too. ")
   public ResponseEntity<String> updateAddress(@PathVariable Long id) {
     //TODO: finish the endpoint implementation
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
 }

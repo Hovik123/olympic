@@ -1,11 +1,11 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:11-jdk-slim
 RUN mkdir -p /app && mkdir -p /app/conf
-COPY target/*.jar /app/backend.jar
-COPY src/main/resources/*.properties /app/conf/
+COPY . /app
 
 WORKDIR /app
 
-EXPOSE 8080
-ENV LOG_PATH "/app/log"
+RUN mvn clean install
 
-ENTRYPOINT ["java", "-jar", "/app/backend.jar"]
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "/app/backend*.jar"]

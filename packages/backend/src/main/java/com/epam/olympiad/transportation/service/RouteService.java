@@ -5,7 +5,6 @@ import com.epam.olympiad.transportation.model.RouteResponse;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.Map;
 
@@ -13,27 +12,27 @@ import java.util.Map;
 public class RouteService implements BaseService<RouteRequest, RouteResponse> {
   @Override
   public ResponseEntity<Page<RouteResponse>> getList(Map<String, String> requestParameters) {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @Override
   public ResponseEntity<RouteResponse> listRecordByID(Long id) {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @Override
   public ResponseEntity<Long> createNewRecord(RouteRequest request) {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @Override
   public ResponseEntity<Long> updateExistingRecord(RouteRequest request, Long id) {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @Override
   public ResponseEntity<String> deleteExistingRecord(Long id) {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
 }
