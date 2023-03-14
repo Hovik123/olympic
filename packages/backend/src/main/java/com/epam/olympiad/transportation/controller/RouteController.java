@@ -8,7 +8,6 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.Map;
 
@@ -26,31 +25,31 @@ public class RouteController {
   })
   @ApiOperation(value = "Retrieves a list of all routes from the database.")
   public ResponseEntity<Page<RouteResponse>> listRoute(@RequestBody Map<String, String> requestParameters) {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @RequestMapping(method = RequestMethod.GET, value = "/api/routes/{id}")
   @ApiOperation("Retrieves a specific route by its unique identifier.")
   public ResponseEntity<RouteResponse> getRouteById(@PathVariable Long id) {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @RequestMapping(method = RequestMethod.POST, value = "/api/routes")
   @ApiOperation("Creates a new route in the database.")
   public ResponseEntity<Long> createRoute(@RequestBody RouteRequest requestPayload) {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @RequestMapping(method = RequestMethod.PUT, value = "/api/routes/{id}")
   @ApiOperation("Updates an existing route in the database.Updates an existing route in the database.")
   public ResponseEntity<Long> updateRoute(@RequestBody RouteRequest requestPayload, @PathVariable Long id) {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
   @RequestMapping(method = RequestMethod.DELETE, value = "/api/routes/{id}")
   @ApiOperation("Deletes an existing route from the database, When deleting a Route, make sure to NOT DELETE related addresses.")
   public ResponseEntity<String> deleteRoute(@PathVariable Long id) {
-    throw new NotImplementedException();
+    throw new UnsupportedOperationException();
   }
 
 }
