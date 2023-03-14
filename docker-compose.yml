@@ -19,9 +19,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    command: npm run serve:dev
     ports:
       - "4200:4200"
-    command: npm run serve:dev
     depends_on:
       - backend
     volumes:
