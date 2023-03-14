@@ -4,8 +4,8 @@ COPY . /app
 
 WORKDIR /app
 
-RUN mvn clean install
+RUN mvn install -DskipTests
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "/app/backend*.jar"]
+ENTRYPOINT ["java", "-jar", "/app/target/backend-1.0.jar"]

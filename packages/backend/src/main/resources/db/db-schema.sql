@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS route;
+DROP TABLE IF EXISTS address;
 CREATE TABLE address (
                          id INT NOT NULL AUTO_INCREMENT,
                          street_name VARCHAR(255) NOT NULL,

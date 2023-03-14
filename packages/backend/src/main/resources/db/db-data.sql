@@ -23,7 +23,7 @@ INSERT INTO route (route_id, order_number, workload_index, usage_index, start_da
                                                                                                             (1, 2, 40, 60, UNIX_TIMESTAMP('2023-03-18'), UNIX_TIMESTAMP('2023-03-20'), 3),
                                                                                                             (1, 3, 20, 40, UNIX_TIMESTAMP('2023-03-21'), UNIX_TIMESTAMP('2023-03-23'), 5),
                                                                                                             (1, 4, 80, 90, UNIX_TIMESTAMP('2023-03-24'), UNIX_TIMESTAMP('2023-03-26'), 6),
-                                                                                                            (1, 5, 70, 70, UNIX_TIMESTAMP('2023-03-27'), UNIX_TIMESTAMP('202-03-29'), 10),
+                                                                                                            (1, 5, 70, 70, UNIX_TIMESTAMP('2023-03-27'), UNIX_TIMESTAMP('2023-03-29'), 10),
                                                                                                             (1, 6, 50, 50, UNIX_TIMESTAMP('2023-03-30'), UNIX_TIMESTAMP('2023-04-01'), 12),
                                                                                                             -- Route 2
                                                                                                             (2, 1, 30, 50, UNIX_TIMESTAMP('2023-03-15'), UNIX_TIMESTAMP('2023-03-17'), 2),
