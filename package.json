@@ -2,7 +2,11 @@
   "name": "olympic",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "nx": "nx",
+    "serve": "nx serve frontend --prod",
+    "serve:dev": "nx serve frontend"
+  },
   "private": true,
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
