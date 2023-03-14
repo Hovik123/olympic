@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.LinkedList;
 
 @Getter
@@ -15,15 +16,21 @@ import java.util.LinkedList;
 @AllArgsConstructor
 public class RouteResponse implements Serializable, BaseResponseModel {
 
-    @JsonProperty("id")
-    private Long id;
+  @JsonProperty("id")
+  private Long id;
 
-    @JsonProperty("stops")
-    private LinkedList<AddressResponse> stops;
+  @JsonProperty("stops")
+  private LinkedList<AddressResponse> stops;
 
-    @JsonProperty("workload_index")
-    private Integer workloadIndex;
+  @JsonProperty("workload_index")
+  private Integer workloadIndex;
 
-    @JsonProperty("usage_index")
-    private Integer usageIndex;
+  @JsonProperty("usage_index")
+  private Integer usageIndex;
+
+  @JsonProperty("start_date")
+  private LocalDateTime startDate;
+
+  @JsonProperty("end_date")
+  private LocalDateTime endDate;
 }

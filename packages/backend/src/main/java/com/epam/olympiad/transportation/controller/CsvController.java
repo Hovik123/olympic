@@ -1,8 +1,9 @@
 package com.epam.olympiad.transportation.controller;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 @RestController
@@ -10,15 +11,9 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 public class CsvController {
 
 
-    @RequestMapping(method = RequestMethod.POST, value = "/upload/{type}")
-    public ResponseEntity<String> uploadCSVData(@RequestParam("file") MultipartFile file, @PathVariable String type) {
-        //TODO: finish the endpoint implementation
-        throw new NotImplementedException();
-    }
-
-    @RequestMapping(method = RequestMethod.GET, value = "/upload/{type}")
-    public ResponseEntity<String> exportCsvData(@PathVariable String type) {
-        //TODO: finish the endpoint implementation
-        throw new NotImplementedException();
-    }
+  @RequestMapping(method = RequestMethod.POST, value = "/import/")
+  public ResponseEntity<String> uploadCSVData() {
+    //TODO: finish the endpoint implementation
+    throw new NotImplementedException();
+  }
 }

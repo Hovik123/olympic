@@ -15,14 +15,14 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class AddressRequest implements Serializable, BaseRequestModel {
 
-    @JsonProperty("street")
-    private String street;
+  @JsonProperty("street")
+  private String street;
 
-    @JsonProperty("building_no")
-    private String buildingNo;
+  @JsonProperty("building_no")
+  private String buildingNo;
 
-    @JsonProperty("city_id")
-    private String cityID;
+  @JsonProperty("city_id")
+  private String cityID;
 
 }
 

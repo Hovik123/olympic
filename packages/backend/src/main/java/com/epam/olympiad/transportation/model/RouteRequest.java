@@ -15,6 +15,6 @@ import java.util.LinkedList;
 @AllArgsConstructor
 public class RouteRequest implements Serializable, BaseRequestModel {
 
-    @JsonProperty("stops")
-    private LinkedList<AddressRequest> stops;
+  @JsonProperty("stops")
+  private LinkedList<AddressRequest> stops;
 }

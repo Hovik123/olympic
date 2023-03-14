@@ -14,14 +14,14 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class AddressResponse implements Serializable, BaseResponseModel {
 
-    @JsonProperty("id")
-    private Long id;
-    @JsonProperty("street")
-    private String street;
+  @JsonProperty("id")
+  private Long id;
+  @JsonProperty("street")
+  private String street;
 
-    @JsonProperty("building_no")
-    private String buildingNo;
+  @JsonProperty("building_no")
+  private String buildingNo;
 
-    @JsonProperty("city_name")
-    private String cityName;
+  @JsonProperty("city_name")
+  private String cityName;
 }

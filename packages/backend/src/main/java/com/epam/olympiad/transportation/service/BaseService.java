@@ -2,21 +2,21 @@ package com.epam.olympiad.transportation.service;
 
 import com.epam.olympiad.transportation.model.BaseRequestModel;
 import com.epam.olympiad.transportation.model.BaseResponseModel;
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 
-import java.util.List;
 import java.util.Map;
 
 public interface BaseService<R extends BaseRequestModel, A extends BaseResponseModel> {
 
-    ResponseEntity<List<A>> getList(Map<String, String> requestParameters);
+  ResponseEntity<Page<A>> getList(Map<String, String> requestParameters);
 
-    ResponseEntity<A> listRecordByID(Long id);
+  ResponseEntity<A> listRecordByID(Long id);
 
-    ResponseEntity<Long> createNewRecord(R request);
+  ResponseEntity<Long> createNewRecord(R request);
 
-    ResponseEntity<Long> updateExistingRecord(R request, Long id);
+  ResponseEntity<Long> updateExistingRecord(R request, Long id);
 
-    ResponseEntity<String> deleteExistingRecord(Long id);
+  ResponseEntity<String> deleteExistingRecord(Long id);
 
 }
